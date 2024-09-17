@@ -1,3 +1,9 @@
+### Links
+1. https://github.com/jamesroutley/algorithms-and-data-structures/tree/master/hash-table/src
+2. https://www.algolist.net/Data_structures/Hash_table/Open_addressing
+
+
+### 如果在 insert 的时候不复用被标记为删除的元素的话，那不是会有很多被标记为删除的元素吗
 是的，如果在插入时不复用那些标记为删除的元素（`HT_DELETED_ITEM`），会导致哈希表中出现大量的删除标记，随着时间推移，表中的空间将越来越多被这些无效的删除标记占据。这会导致以下两个问题：
 
 1. **空间浪费**：这些删除标记占据了可用空间，使哈希表越来越满，实际可用的空间减少，降低存储效率。
